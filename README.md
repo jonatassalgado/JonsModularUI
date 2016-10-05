@@ -43,23 +43,15 @@
 ## Using modular media-queries in components
 ```
 .Section{
-  border-bottom: 1px solid $border-color;
   padding: 0 0 35px 0;
 
   &-header{
     padding: 15px 0 10px;
-    overflow: auto;
   }
 
   &-title{
-    font-family: $font-title;
-    font-size: 20px;
-    letter-spacing: 1px;
-    line-height: 1.1em;
     text-align: left;
     float: left;
-    margin-top: 0;
-    margin-bottom: 10px;
     @include mobile{
       text-align: center;
       float: none;
@@ -71,6 +63,17 @@
     }
   }
 ```
+
+### Available variables to media-queries
+`desktop`: min-width: 1200px
+
+`tablet`: min-width: 900px and max-width: 1199
+
+`mobile`: min-width: 1px and max-width: 899px
+
+`lg-mobile`: min-width: 425px and max-width: 899px
+
+`sm-mobile`: min-width: 1px and max-width: 424px
 
 ## Using Grids
 ```
