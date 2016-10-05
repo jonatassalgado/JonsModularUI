@@ -1,4 +1,4 @@
-### Name of selectors for componentes
+## Name of selectors for componentes
 ```
 .MyComponent {}
 .MyComponent.is-animating {}
@@ -8,7 +8,7 @@
 .MyComponent-anotherPart {}
 ```
 
-### Structure of components with Sass
+## Structure of components with Sass
 ```
 @import 'variables';
 
@@ -40,7 +40,7 @@
 
 ```
 
-### Using modular media-queries in components
+## Using modular media-queries in components
 ```
 .Section{
   border-bottom: 1px solid $border-color;
@@ -72,16 +72,19 @@
   }
 ```
 
-### Using Grids
+## Using Grids
 ```
 <div class="Grid">
-  <div class="Grid-cell u-size1of2 u-before1of4 u-after1of4">
+  <div class="Grid-cell u-size6of12">
     Meu conteudo ou divs
   </div>
+  <div class="Grid-cell u-size6of12">
+    Meu conteudo ou divs
+  </div>  
 </div>
 ```
 
-##### Available classes
+### Available classes for Grid
 
 `Grid`: core component
 
@@ -102,3 +105,15 @@
 `Grid-cell`: a child cell of Grid that wraps grid content
 
 `Grid-cell--center`: center an individual Grid-cell
+
+## Require dependencies or other components
+```
+/* npm-installed dependency */
+@import "suitcss-utils-text";
+/* local dependency */
+@import "./Button";
+
+.MyComponent {}
+```
+
+Fork from https://suitcss.github.io/
