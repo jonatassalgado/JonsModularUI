@@ -1,4 +1,10 @@
-## Name of selectors for componentes
+# Getting Started
+
+Use NPM to install: `npm install jons-modular-ui`.
+
+In Rails you can add to `vendor` path directly and request the `index.css` in `application.css`. If you not use Rails or other automatic preprocessor, you need compile with Sass.
+
+## Name convention of selectors for componentes
 ```
 .MyComponent {}
 .MyComponent.is-animating {}
